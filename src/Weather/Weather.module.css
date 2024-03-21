@@ -1,0 +1,42 @@
+.mainWeatherContainer {
+    height: 300px;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.temperature {
+    font-size: 36px;
+}
+
+.description {
+    font-size: 24px;
+}
+
+.mainWeatherContainer button {
+    border: 1px white solid;
+    background-color: rgb(41, 52, 77);
+    width: 100px;
+    height: 30px;
+    color: white;
+}

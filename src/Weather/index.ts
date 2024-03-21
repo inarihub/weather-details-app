@@ -1,0 +1,1 @@
+export {LazyWeather as Weather} from './Weather.lazy';
