@@ -1,18 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 .mainWeatherContainer {
     height: 300px;
     width: 300px;
+    margin: 0;
+    padding: 10px;
+    
     border: 3px solid white;
     border-radius: 15px;
     background-color: #1b1b1b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    gap: 1em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Albert Sans';
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;    
 }
 
 p {
@@ -21,22 +26,14 @@ p {
     text-align: center;
 }
 
-.title {
-    font-size: 18px;
+.locationName {
+    font-size: 32px;
+    max-width: 100%;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.temperature {
-    font-size: 36px;
-}
-
-.description {
-    font-size: 24px;
-}
-
-.mainWeatherContainer button {
-    border: 1px white solid;
-    background-color: rgb(41, 52, 77);
-    width: 100px;
-    height: 30px;
-    color: white;
+.footer {
+    font-size: 10px;
 }

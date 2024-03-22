@@ -1,0 +1,20 @@
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.temperature {
+    font-size: 36px;
+}
+
+.description {
+    font-size: 24px;
+}
