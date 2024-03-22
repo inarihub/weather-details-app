@@ -4,7 +4,7 @@ import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Weather } from './Weather';
+import { Weather } from './components/Weather';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

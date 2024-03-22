@@ -1,3 +1,4 @@
+// make it clear that this also maps the icons
 export const codesMap = new Map([
     [0, ['Clear sky', 'clear']],
     [1, ['Mainly clear', 'mostly_cloudy']],

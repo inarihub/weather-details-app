@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { getWeather } from "../weather-api";
+import { useCallback, useEffect, useState } from "react";
+import { getWeather } from "../../weather-api";
 import classes from './Weather.module.css';
-import WeatherData from "./WeatherContent";
-import { WeatherContentProps } from "./WeatherContent.types";
+import WeatherContent from "../WeatherContent/WeatherContent";
+import { WeatherContentProps } from "../WeatherContent/WeatherContent.types";
 import { NullableWeatherData } from "./Weather.types";
-
+//123
 const testLocationName = 'Russia-Moscow';
 const msCheckInterval = 60 * 1000;
 
@@ -18,15 +18,18 @@ const Weather = () => {
         return () => { clearInterval(updateTimer); };
     }, [])
 
-    const fetchWeatherDataAsync = async () => {
+    const fetchWeatherDataAsync = useCallback(async () => {
         const newData = await getWeather(testLocationName);
 
         if (newData) {
             setWeatherObj(newData);
         }
-    }
+        
+    }, [testLocationName]);
 
-    const content = weatherObj ? <WeatherData {...weatherObj as WeatherContentProps}/> : <p>No Info</p>
+    const content = weatherObj 
+        ? <WeatherContent {...weatherObj as WeatherContentProps}/> 
+        : <p>No Info</p>
 
     return (
         <div className={classes.mainWeatherContainer}>

@@ -1,7 +1,7 @@
 import classes from './WeatherContent.module.css';
 import { WeatherContentProps } from './WeatherContent.types';
 
-const WeatherData = (props: WeatherContentProps) => {
+const WeatherContent = (props: WeatherContentProps) => {
 
     const {weatherIcon, tempString, weatherDescString} = props;
 
@@ -14,4 +14,4 @@ const WeatherData = (props: WeatherContentProps) => {
     )
 }
 
-export default WeatherData;
+export default WeatherContent;
